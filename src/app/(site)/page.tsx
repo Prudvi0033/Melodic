@@ -5,7 +5,9 @@ const fig = Figtree({subsets : ['latin']})
 
 const page = () => {
   return (
-    <div className={`${fig.className}`}>Hello Ji</div>
+    <div className={`${fig.className} bg-neutral-900/50 rounded-lg w-full h-full overflow-hidden overflow-y-auto`}>
+      
+    </div>
   )
 }
 

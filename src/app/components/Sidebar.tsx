@@ -5,7 +5,9 @@ import { House, Search } from 'lucide-react';
 import Box from "./Box";
 import SidebarItem from "./SidebarItem";
 import Library from "./Library";
+import { Figtree } from 'next/font/google'
 
+const fig = Figtree({subsets : ['latin']})
 
 
 interface SidebarProps {
@@ -29,7 +31,7 @@ const Sidebar : React.FC<SidebarProps> = ({children}) => {
     }
   ],[pathName])
   return (
-    <div className="flex h-full">
+    <div className={`flex h-full ${fig.className}`}>
       <div className="hidden md:flex flex-col gap-y-2 h-full w-[300px] p-2">
         <Box>
           <div className="flex flex-col gap-y-4 border-b border-neutral-400/30 px-5 py-4">
